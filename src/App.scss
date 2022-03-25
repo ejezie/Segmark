@@ -18,6 +18,10 @@ a {
   color: #737174;
 }
 
+.reverse{
+    flex-direction: row-reverse;
+}
+
 .btn {
   transition: all 0.5s;
   background: linear-gradient(

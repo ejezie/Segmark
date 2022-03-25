@@ -1,7 +1,7 @@
 .landing {
   width: 100vw;
   overflow-x: hidden;
-  .landing-one {
+  .landing-section {
     padding: 5rem 0;
     width: 100%;
     align-items: flex-start;
@@ -71,9 +71,9 @@
       width: 50%;
       position: relative;
       @media (max-width: 960px) {
-        width: 70%;
+        width: 100%;
       }
-      .image {
+      img {
         object-fit: contain;
       }
       .elipse1,
@@ -88,6 +88,58 @@
       .elipse2 {
         bottom: -5rem;
         right: 7rem;
+      }
+      .right-img-wrap {
+        position: relative;
+        height: 100%;
+        width: 30rem;
+        // border: 2px solid black;
+        @media (max-width: 960px) {
+          width: 30rem;
+        }
+        @media (max-width: 550px) {
+          width: 18rem;
+        }
+
+        .img2 {
+          position: absolute;
+          width: 31rem;
+          z-index: 2;
+          top: 11%;
+          left: 5%;
+          @media (max-width: 960px) {
+            width: 20rem;
+          }
+        }
+        .img3 {
+          position: absolute;
+          width: 23rem;
+          z-index: 2;
+          top: 5%;
+          left: 17%;
+          @media (max-width: 960px) {
+            width: 20rem;
+          }
+        }
+        .img4 {
+          position: absolute;
+          width: 28rem;
+          z-index: 2;
+          top: 6%;
+          left: 5%;
+          @media (max-width: 960px) {
+            width: 20rem;
+          }
+        }
+        .img1 {
+          width: 100%;
+          @media (max-width: 960px) {
+            width: 30rem;
+          }
+          @media (max-width: 550px) {
+          width: 18rem;
+        }
+        }
       }
     }
   }
