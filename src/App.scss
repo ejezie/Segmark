@@ -1,0 +1,64 @@
+@import "./styles/navbar.scss";
+@import "./styles/slider.scss";
+@import "./styles/landing.scss";
+
+// General Classes
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #737174;
+}
+
+.btn {
+  transition: all 0.5s;
+  background: linear-gradient(
+    90.82deg,
+    #803ff8 -7.48%,
+    #9a40ea 41.91%,
+    #b940da 106.07%
+  );
+  border-radius: 6px;
+  width: 167px;
+  height: 50px;
+  color: white;
+  &:hover {
+    background: linear-gradient(
+      90.82deg,
+      #9059f8 -7.48%,
+      #a65ce7 41.91%,
+      #bc59d8 106.07%
+    );
+  }
+}
+.purple {
+  color: #c037db;
+}
+.sub-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  color: #312f34;
+}
+
+.marginb1 {
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  max-width: 550px;
+  color: #727272;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.drawer {
+  @media (max-width: 960px) {
+    transform: translateX(0px);
+  }
+}

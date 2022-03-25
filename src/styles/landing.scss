@@ -1,0 +1,77 @@
+.landing {
+  width: 100vw;
+
+  .landing-one {
+    padding: 5rem 0;
+    width: 100%;
+    align-items: flex-start;
+    .left {
+      width: 50%;
+      padding-left: 5rem;
+      .btn-wrap {
+        justify-content: flex-start;
+        .btn {
+          margin-right: 1rem;
+        }
+        .btn-two {
+          background: linear-gradient(
+            90.82deg,
+            #f26e35 -7.48%,
+            #f26e35 41.91%,
+            #f26e35 106.07%
+          );
+          &:hover {
+            background: linear-gradient(
+              90.82deg,
+              #ee8254 -7.48%,
+              #ee8254 41.91%,
+              #ee8254 106.07%
+            ) !important;
+          }
+        }
+        .appstore {
+        }
+      }
+      .icon-wrap {
+        justify-content: flex-start;
+        margin: 3rem 0;
+        .wrap {
+          .img-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            background: linear-gradient(
+              85.56deg,
+              #893ff4 -88.04%,
+              #9e40e9 36.9%,
+              #bc41da 182.7%
+            );
+          }
+          .icon-text {
+            margin-right: 1rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      position: relative;
+      .image {
+        object-fit: contain;
+      }
+      .elipse1,
+      .elipse2 {
+        position: absolute;
+        z-index: -1;
+      }
+      .elipse1 {
+        top: -2rem;
+      }
+      .elipse2 {
+        bottom: -4rem;
+      }
+    }
+  }
+}
