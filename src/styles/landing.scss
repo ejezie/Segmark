@@ -1,13 +1,21 @@
 .landing {
   width: 100vw;
-
+  overflow-x: hidden;
   .landing-one {
     padding: 5rem 0;
     width: 100%;
     align-items: flex-start;
+    @media (max-width: 960px) {
+      flex-direction: column;
+    }
     .left {
       width: 50%;
       padding-left: 5rem;
+      @media (max-width: 960px) {
+        width: 100%;
+        padding-left: 2rem;
+        margin-bottom: 10rem;
+      }
       .btn-wrap {
         justify-content: flex-start;
         .btn {
@@ -35,7 +43,11 @@
       .icon-wrap {
         justify-content: flex-start;
         margin: 3rem 0;
+        flex-wrap: wrap;
         .wrap {
+          @media (max-width: 1250px) {
+            margin-bottom: 1rem;
+          }
           .img-wrap {
             width: 44px;
             height: 44px;
@@ -58,6 +70,9 @@
     .right {
       width: 50%;
       position: relative;
+      @media (max-width: 960px) {
+        width: 70%;
+      }
       .image {
         object-fit: contain;
       }
@@ -67,10 +82,12 @@
         z-index: -1;
       }
       .elipse1 {
-        top: -2rem;
+        top: -3.5rem;
+        left: 6rem;
       }
       .elipse2 {
-        bottom: -4rem;
+        bottom: -5rem;
+        right: 7rem;
       }
     }
   }

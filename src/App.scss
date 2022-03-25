@@ -3,6 +3,10 @@
 @import "./styles/landing.scss";
 
 // General Classes
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -23,6 +27,7 @@ a {
     #b940da 106.07%
   );
   border-radius: 6px;
+  min-width: 167px;
   width: 167px;
   height: 50px;
   color: white;
@@ -33,6 +38,10 @@ a {
       #a65ce7 41.91%,
       #bc59d8 106.07%
     );
+  }
+  @media (max-width: 400px) {
+   min-width: 127px;
+   width: 140px;
   }
 }
 .purple {
@@ -55,6 +64,7 @@ a {
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
+  padding-right: 0.2rem;
 }
 
 .drawer {

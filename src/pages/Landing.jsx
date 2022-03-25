@@ -73,6 +73,36 @@ function Landing() {
           <img className="elipse2" src={elipse1} alt="screen" />
         </div>
       </div>
+      <div className="landing-one center">
+        <div className="left">
+          <div className="sub-heading marginb1">
+            Seamless school management <br /> system to enhance <br />{" "}
+            <span className="purple">learning and development</span>
+          </div>
+          <div className="text marginb1">
+            We empower schools in improving key areas such as students learning
+            and development when you enroll your school on Segmak; you’re
+            pushing academic engagement for your teachers and students to the
+            next level.
+          </div>
+          <div className="btn-wrap center">
+            <Link to={""}>
+              <div className="btn center">Get started</div>
+            </Link>
+          </div>
+        
+          <div className="btn-wrap center">
+            <a href="#">
+              <img className="appstore" src={appstore} alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div className="right">
+          <img className="image" src={screen} alt="screen" />
+          <img className="elipse1" src={elipse2} alt="screen" />
+          <img className="elipse2" src={elipse1} alt="screen" />
+        </div>
+      </div>
     </div>
   );
 }
