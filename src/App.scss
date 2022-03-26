@@ -18,12 +18,13 @@ a {
   color: #737174;
 }
 
-.reverse{
-    flex-direction: row-reverse;
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .btn {
   transition: all 0.5s;
+  cursor: pointer;
   background: linear-gradient(
     90.82deg,
     #803ff8 -7.48%,
@@ -44,8 +45,8 @@ a {
     );
   }
   @media (max-width: 400px) {
-   min-width: 127px;
-   width: 140px;
+    min-width: 127px;
+    width: 140px;
   }
 }
 .purple {
@@ -56,12 +57,14 @@ a {
   font-size: 30px;
   line-height: 48px;
   color: #312f34;
+  @media (max-width: 960px) {
+    max-width: 1200px;
+  }
 }
 
 .marginb1 {
   margin-bottom: 1.5rem;
 }
-
 .text {
   max-width: 550px;
   color: #727272;
@@ -69,6 +72,9 @@ a {
   line-height: 30px;
   font-weight: 300;
   padding-right: 0.2rem;
+  @media (max-width: 960px) {
+    max-width: 1200px;
+  }
 }
 
 .drawer {

@@ -16,13 +16,17 @@ import people from "../assets/icons/people.png";
 import pipscreen from "../assets/icons/pipscreen.png";
 import school from "../assets/icons/school.png";
 import appstore from "../assets/icons/appstore.png";
+import card1 from "../assets/icons/card1.png";
+import card2 from "../assets/icons/card2.png";
+import card3 from "../assets/icons/card3.png";
+import card4 from "../assets/icons/card4.png";
 
 function Landing() {
   return (
     <div className="landing">
       {/* New Section */}
 
-      <div className="landing-section center">
+      <div className="landing-section center" style={{ marginBottom: "4rem" }}>
         <div className="left">
           <div className="sub-heading marginb1">
             Seamless school management <br /> system to enhance <br />{" "}
@@ -110,7 +114,10 @@ function Landing() {
       </div>
       {/* New Section */}
 
-      <div className="landing-section center reverse">
+      <div
+        className="landing-section center reverse"
+        style={{ backgroundColor: "#f8f8f8" }}
+      >
         <div className="left">
           <div className="sub-heading marginb1">
             <span className="purple">Unrestricted Access </span>to learning{" "}
@@ -160,6 +167,59 @@ function Landing() {
           <div className="right-img-wrap center">
             <img className="img1" src={g29} alt="screen" />
             <img className="img4" src={happy} alt="screen" />
+          </div>
+        </div>
+      </div>
+
+      {/* New Section */}
+      <div className="landing-two center">
+        <div className="card-wrap center">
+          <div className="card center">
+            <div className="wrap center">
+              <div className="icon center">
+                <img src={card1} alt="icon" />
+              </div>
+              <div className="card-heading">Exam Master</div>
+              <div className="text">
+                You can manage exams, set grade range, tabulation sheet, exam
+                schedules etc
+              </div>
+            </div>
+          </div>
+          <div className="card center">
+            <div className="wrap center">
+              <div className="icon center">
+                <img src={card2} alt="icon" />
+              </div>
+              <div className="card-heading">Live Classes</div>
+              <div className="text">
+                Students can attend virtual clases on Segmak from their teachers
+              </div>
+            </div>
+          </div>
+          <div className="card center">
+            <div className="wrap center">
+              <div className="icon center">
+                <img src={card3} alt="icon" />
+              </div>
+              <div className="card-heading">Ebooks & Libary</div>
+              <div className="text">
+                Get access to learning resources and materials like past
+                questions, assignments and files for students
+              </div>
+            </div>
+          </div>
+          <div className="card center">
+            <div className="wrap center">
+              <div className="icon center">
+                <img src={card4} alt="icon" />
+              </div>
+              <div className="card-heading">Attendance</div>
+              <div className="text">
+                You can set students, employees exam attendance and parents will
+                receive an sms when a student is absent
+              </div>
+            </div>
           </div>
         </div>
       </div>
