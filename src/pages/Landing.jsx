@@ -36,7 +36,7 @@ function Landing() {
       >
         <div className="left">
           <div className="sub-heading marginb1">
-            Seamless school management <br /> system to enhance <br />{" "}
+            Seamless school management  system to enhance <br /> {" "}
             <span className="purple">learning and development</span>
           </div>
           <div className="text marginb1">
@@ -99,7 +99,7 @@ function Landing() {
       <div className="section center section-padding">
         <div className="left">
           <div className="sub-heading marginb1">
-            <span className="purple">Just online,</span> the same <br />{" "}
+            <span className="purple">Just online,</span> the same {" "}
             classroom
           </div>
           <div className="text marginb1">
@@ -130,7 +130,7 @@ function Landing() {
         <div className="left">
           <div className="sub-heading marginb1">
             <span className="purple">Unrestricted Access </span>to learning{" "}
-            <br /> materials
+            materials
           </div>
           <div className="text marginb1">
             Our learning center provides students with unrestricted access to a

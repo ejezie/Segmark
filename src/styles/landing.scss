@@ -36,6 +36,9 @@
           }
         }
         .appstore {
+          @media screen and (max-width: 500px) {
+            width: 15rem;
+          }
         }
       }
       .icon-wrap {
@@ -57,10 +60,20 @@
               #9e40e9 36.9%,
               #bc41da 182.7%
             );
+            @media (max-width: 400px) {
+              width: 30px;
+              height: 30px;
+              img {
+                width: 0.9rem;
+              }
+            }
           }
           .icon-text {
             margin-right: 1rem;
             font-weight: 500;
+            @media (max-width: 960px) {
+              font-size: 15px;
+            }
           }
         }
       }
@@ -122,9 +135,9 @@
         @media (max-width: 960px) {
           width: 20%;
         }
-          @media (max-width: 480px) {
+        @media (max-width: 480px) {
           top: -1.3rem;
-        left: 4rem;
+          left: 4rem;
         }
       }
       .right-img-wrap {
