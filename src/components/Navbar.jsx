@@ -11,7 +11,7 @@ function Navbar({ handleMenuClick, }) {
         </div>
       </div>
       <div className={`links center`}>
-        <NavLink to={""}>Features</NavLink>
+        <NavLink to={"/features"}>Features</NavLink>
         <NavLink to={""}>Pricing</NavLink>
         <NavLink to={""}>Contact</NavLink>
         <NavLink to={""}>About us</NavLink>

@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
+import Features from "./pages/Features";
 
 function App() {
   const [drawer, setDrawer] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         <Navbar handleMenuClick={handleMenuClick} />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/features" element={<Features />} />
         </Routes>
         <Footer/>
       </Router>

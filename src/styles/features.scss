@@ -1,0 +1,29 @@
+.features {
+  overflow-x: hidden;
+  height: fit-content;
+  .features-one {
+    height: fit-content;
+    padding-bottom: 3rem;
+    @media (max-width: 960px) {
+        padding-bottom: 0rem;
+    }
+    .left {
+      width: 50%;
+    }
+    .right {
+      width: 50%;
+      position: relative;
+      .screen {
+        z-index: 2;
+      }
+      .circle2 {
+        position: absolute;
+        bottom: -6rem;
+        z-index: 1;
+      }
+      .box {
+        position: absolute;
+      }
+    }
+  }
+}

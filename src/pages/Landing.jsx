@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import elipse1 from "../assets/images/Ellipse1.png";
 import elipse2 from "../assets/images/Ellipse2.png";
 import screen from "../assets/images/landing.jpg";
+import screen2 from "../assets/images/screen2.png";
 import g29 from "../assets/images/g29.png";
 import g31 from "../assets/images/g31.png";
 import imgboy from "../assets/images/imgboy.png";
@@ -29,7 +30,10 @@ function Landing() {
     <div className="landing">
       {/* New Section */}
 
-      <div className="landing-section center" style={{ marginBottom: "4rem" }}>
+      <div
+        className="section center section-padding"
+        style={{ marginBottom: "4rem" }}
+      >
         <div className="left">
           <div className="sub-heading marginb1">
             Seamless school management <br /> system to enhance <br />{" "}
@@ -82,15 +86,17 @@ function Landing() {
           </div>
         </div>
         <div className="right">
-          <img className="image" src={screen} alt="screen" />
-          <img className="elipse1" src={elipse2} alt="screen" />
+          <div className="image-wrap">
+            <img className="screen" src={screen2} alt="screen" />
+            <img className="elipse1" src={elipse2} alt="screen" />
           <img className="elipse2" src={elipse1} alt="screen" />
+          </div>
         </div>
       </div>
 
       {/* New Section */}
 
-      <div className="landing-section center">
+      <div className="section center section-padding">
         <div className="left">
           <div className="sub-heading marginb1">
             <span className="purple">Just online,</span> the same <br />{" "}
@@ -118,7 +124,7 @@ function Landing() {
       {/* New Section */}
 
       <div
-        className="landing-section center reverse"
+        className="section center reverse section-padding"
         style={{ backgroundColor: "#f8f8f8" }}
       >
         <div className="left">
@@ -149,7 +155,7 @@ function Landing() {
       </div>
       {/* New Section */}
 
-      <div className="landing-section center">
+      <div className="section center section-padding">
         <div className="left">
           <div className="sub-heading marginb1">
             <span className="purple"> Segmak</span> for teachers
