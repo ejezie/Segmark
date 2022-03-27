@@ -16,7 +16,6 @@
       width: 50%;
       @media (max-width: 960px) {
         width: 100%;
-        padding-left: 2rem;
         margin-bottom: 10rem;
       }
       .btn-wrap {
@@ -174,7 +173,7 @@
       background-color: rgba(47, 0, 255, 0.1);
     }
     .card-wrap {
-      width: 88%;
+      width: 91%;
       flex-wrap: wrap;
       .card {
         z-index: 3;
@@ -191,7 +190,7 @@
           width: 45%;
         }
         @media (max-width: 630px) {
-          width: 100%;
+          width: 92%;
           margin: 0 0rem 1rem 0rem;
         }
         .wrap {

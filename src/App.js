@@ -3,9 +3,11 @@ import "./App.scss";
 import React, { useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import Slider from "./components/Slider";
+import Footer from "./components/Footer";
 
 function App() {
   const [drawer, setDrawer] = useState(false);
@@ -22,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

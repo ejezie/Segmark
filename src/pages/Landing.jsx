@@ -11,6 +11,9 @@ import imgboy from "../assets/images/imgboy.png";
 import g30 from "../assets/images/g30.png";
 import mask from "../assets/images/mask.png";
 import happy from "../assets/images/happy.png";
+import hans from "../assets/images/hans.png";
+import infobg from "../assets/images/infobg.png";
+import bulb from "../assets/images/bulb.png";
 import outline from "../assets/icons/outline.png";
 import people from "../assets/icons/people.png";
 import pipscreen from "../assets/icons/pipscreen.png";
@@ -221,6 +224,20 @@ function Landing() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="information center">
+        <div className="left center">
+          <div className="info-card center">
+            <img className="info-icon marginb1" src={bulb} alt="icon" />
+            <div className="text marginb1">
+              Need more information about us? we will love to hear from you{" "}
+            </div>
+            <div className="btn center">Get in Touch</div>
+          </div>
+        </div>
+        <div className="right center">
+          <img className="hans" src={hans} alt="man" />
         </div>
       </div>
     </div>
