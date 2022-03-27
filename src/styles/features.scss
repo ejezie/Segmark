@@ -13,8 +13,9 @@
     .right {
       width: 50%;
       position: relative;
-      .screen {
+      .screen2 {
         z-index: 2;
+        object-fit: contain;
       }
       .circle2 {
         position: absolute;

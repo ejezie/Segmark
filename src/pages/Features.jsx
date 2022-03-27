@@ -25,7 +25,7 @@ function Features() {
         </div>
         <div className="right center">
           <div className="right-img-wrap center">
-            <img className="screen" src={screen2} alt="screen" />
+            <img className="screen2" src={screen2} alt="screen" />
             <img className="circle2" src={circle2} alt="screen" />
             <div className="box">
               <img src={time} alt="icon" />
