@@ -35,6 +35,9 @@ function Features() {
     threshold: 0.3,
   });
 
+  const onScrolls = () => {
+    console.log("scrolling");
+  };
   return (
     <>
       <div className="features section-padding">

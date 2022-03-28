@@ -30,6 +30,9 @@
     .block1 {
       .text {
         max-width: 350px;
+        @media (max-width: 960px) {
+          text-align: start;
+        }
       }
       .img-wrap {
         .icon {

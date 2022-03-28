@@ -16,6 +16,9 @@
       }
       .btn-wrap {
         justify-content: flex-start;
+        @media (max-width: 960px) {
+          justify-content: center;
+        }
         .btn {
           margin-right: 1rem;
         }
@@ -45,9 +48,20 @@
         justify-content: flex-start;
         margin: 3rem 0;
         flex-wrap: wrap;
+        @media (max-width: 960px) {
+          justify-content: center;
+          width: 100%;
+          flex-wrap: nowrap;
+        }
+        @media (max-width: 400px) {
+          flex-wrap: nowrap;
+        }
         .wrap {
           @media (max-width: 1250px) {
             margin-bottom: 1rem;
+          }
+          @media (max-width: 400px) {
+            width: 7rem;
           }
           .img-wrap {
             width: 44px;
@@ -61,8 +75,14 @@
               #bc41da 182.7%
             );
             @media (max-width: 400px) {
-              width: 30px;
-              height: 30px;
+              width: 25px;
+              height: 25px;
+              margin-right: 0.2rem;
+              img {
+                width: 0.8rem;
+              }
+            }
+            @media (max-width: 400px) {
               img {
                 width: 0.9rem;
               }
@@ -73,6 +93,10 @@
             font-weight: 500;
             @media (max-width: 960px) {
               font-size: 15px;
+            }
+            @media (max-width: 400px) {
+              font-size: 11px;
+              margin-right: 0rem;
             }
           }
         }
@@ -214,17 +238,17 @@
       width: 30rem;
       left: 0;
       clip-path: polygon(0 0, 46% 0, 100% 100%, 0% 100%);
-      background-color: rgba(47, 0, 255, 0.1);
+      background-color: #E7E6FB;
     }
     &::after {
       content: "";
       z-index: 1;
       position: absolute;
       height: 100%;
-      width: 30rem;
+      width: 35rem;
       right: 0;
-      clip-path: polygon(64% 0, 100% 0, 100% 100%, 0% 100%);
-      background-color: rgba(47, 0, 255, 0.1);
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%);
+      background-color: #E4E9FC;
     }
     .card-wrap {
       width: 91%;

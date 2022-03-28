@@ -3,6 +3,7 @@
 @import "./styles/landing.scss";
 @import "./styles/footer.scss";
 @import "./styles/features.scss";
+@import "./styles/pricing.scss";
 
 // General Classes
 body {
@@ -33,7 +34,7 @@ a {
   padding: 5rem 2rem 5rem 5rem;
   background-color: #fff;
   @media (max-width: 960px) {
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 5rem 0.8rem 5rem 0.8rem;
     flex-direction: column;
   }
 }
@@ -77,6 +78,7 @@ a {
   @media (max-width: 960px) {
     max-width: 1200px;
     font-size: 24px;
+    text-align: center;
   }
   @media (max-width: 400px) {
     max-width: 1200px;
@@ -97,6 +99,7 @@ a {
   @media (max-width: 960px) {
     max-width: 1200px;
     font-size: 14px;
+    text-align: center;
   }
 }
 
@@ -141,7 +144,6 @@ a {
     position: relative;
     @media (max-width: 960px) {
       width: 100%;
-      height: 30vh;
     }
     .hans {
       width: 43rem;
@@ -149,24 +151,7 @@ a {
       position: absolute;
       bottom: -12.8rem;
       @media (max-width: 960px) {
-        width: 25rem;
-        bottom: -2.8rem;
-        left: 25rem;
-      }
-      @media (max-width: 888px) {
-        width: 25rem;
-        bottom: -2.8rem;
-        left: 15rem;
-      }
-      @media (max-width: 638px) {
-        width: 25rem;
-        bottom: -2.8rem;
-        left: 7rem;
-      }
-      @media (max-width: 500px) {
-        width: 18rem;
-        bottom: -2.8rem;
-        left: 3rem;
+        display: none;
       }
     }
   }
