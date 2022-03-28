@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import elipse1 from "../assets/images/Ellipse1.png";
 import elipse2 from "../assets/images/Ellipse2.png";
-import screen from "../assets/images/landing.jpg";
+// import screen from "../assets/images/landing.jpg";
 import screen2 from "../assets/images/screen2.png";
 import g29 from "../assets/images/g29.png";
 import g31 from "../assets/images/g31.png";
@@ -36,7 +36,7 @@ function Landing() {
       >
         <div className="left">
           <div className="sub-heading marginb1">
-            Seamless school management  system to enhance <br /> {" "}
+            Seamless school management system to enhance <br />{" "}
             <span className="purple">learning and development</span>
           </div>
           <div className="text marginb1">
@@ -89,7 +89,7 @@ function Landing() {
           <div className="image-wrap">
             <img className="screen" src={screen2} alt="screen" />
             <img className="elipse1" src={elipse2} alt="screen" />
-          <img className="elipse2" src={elipse1} alt="screen" />
+            <img className="elipse2" src={elipse1} alt="screen" />
           </div>
         </div>
       </div>
@@ -99,8 +99,7 @@ function Landing() {
       <div className="section center section-padding">
         <div className="left">
           <div className="sub-heading marginb1">
-            <span className="purple">Just online,</span> the same {" "}
-            classroom
+            <span className="purple">Just online,</span> the same classroom
           </div>
           <div className="text marginb1">
             Improve student participation and enjoy an online and offline
@@ -231,19 +230,19 @@ function Landing() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="information center">
-        <div className="left center">
-          <div className="info-card center">
-            <img className="info-icon marginb1" src={bulb} alt="icon" />
-            <div className="text marginb1">
-              Need more information about us? we will love to hear from you{" "}
+        <div className="information center">
+          <div className="left center">
+            <div className="info-card center">
+              <img className="info-icon marginb1" src={bulb} alt="icon" />
+              <div className="text marginb1">
+                Need more information about us? we will love to hear from you{" "}
+              </div>
+              <div className="btn center">Get in Touch</div>
             </div>
-            <div className="btn center">Get in Touch</div>
           </div>
-        </div>
-        <div className="right center">
-          <img className="hans" src={hans} alt="man" />
+          <div className="right center">
+            <img className="hans" src={hans} alt="man" />
+          </div>
         </div>
       </div>
     </div>

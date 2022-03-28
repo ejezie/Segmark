@@ -12,7 +12,7 @@
       width: 50%;
       @media (max-width: 960px) {
         width: 100%;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
       }
       .btn-wrap {
         justify-content: flex-start;
@@ -86,9 +86,7 @@
         align-items: center;
         justify-content: center;
       }
-      img {
-        object-fit: contain;
-      }
+
       .screen {
         @media (max-width: 960px) {
           width: 90%;
@@ -111,6 +109,7 @@
       .elipse2 {
         z-index: -1;
         position: absolute;
+        image-rendering: auto;
       }
       .elipse2 {
         position: absolute;
@@ -124,8 +123,9 @@
           right: 6rem;
         }
         @media (max-width: 480px) {
-          bottom: -2rem;
-          right: 5rem;
+          bottom: -3rem;
+          right: 4rem;
+          width: 40%;
         }
       }
       .elipse1 {
@@ -137,7 +137,8 @@
         }
         @media (max-width: 480px) {
           top: -1.3rem;
-          left: 4rem;
+          left: 3rem;
+          width: 40%;
         }
       }
       .right-img-wrap {
@@ -154,37 +155,42 @@
 
         .img2 {
           position: absolute;
-          width: 31rem;
+          width: 27rem;
           z-index: 2;
-          top: 11%;
-          left: 5%;
+          top: 14%;
+          left: 1%;
           @media (max-width: 960px) {
             width: 20rem;
           }
         }
         .img3 {
           position: absolute;
-          width: 23rem;
+          width: 20rem;
           z-index: 2;
           top: 5%;
-          left: 17%;
+          left: 18%;
           @media (max-width: 960px) {
-            width: 19rem;
+            width: 15rem;
           }
         }
         .img4 {
           position: absolute;
-          width: 28rem;
+          width: 27rem;
           z-index: 2;
           top: 6%;
           left: 5%;
           @media (max-width: 960px) {
             width: 18rem;
+            top: 23%;
             left: 20%;
+          }
+          @media (max-width: 400px) {
+            top: 13%;
+            left: 5%;
           }
         }
         .img1 {
-          width: 100%;
+          width: 80%;
           @media (max-width: 960px) {
             width: 25rem;
           }
@@ -197,8 +203,9 @@
   }
   .landing-two {
     width: 100%;
-    padding: 5rem 0;
+    padding: 3rem 0;
     position: relative;
+    flex-direction: column;
     &::before {
       content: "";
       z-index: 1;
@@ -222,6 +229,7 @@
     .card-wrap {
       width: 91%;
       flex-wrap: wrap;
+      margin-bottom: 4rem;
       .card {
         z-index: 3;
         background-color: #fff;

@@ -1,5 +1,6 @@
 .footer {
   width: 100vw;
+  border-top: 1px solid #ededed;
   padding: 5rem 2rem 5rem 5rem;
   background-color: #fff;
   @media (max-width: 960px) {
@@ -50,7 +51,7 @@
     }
     .block {
       @media (max-width: 400px) {
-       width: 100%;
+        width: 100%;
       }
     }
   }
