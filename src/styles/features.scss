@@ -120,7 +120,6 @@
       .bar-focus {
         background: #c037db !important;
         border-radius: 20px !important;
-     
       }
 
       .bar {
@@ -129,6 +128,7 @@
         background: #f3f3f3;
         border-radius: 20px;
         margin: 0 1rem 0.6rem 0;
+        transition: all 0.3s ease-in-out;
       }
     }
     .left {

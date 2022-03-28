@@ -26,16 +26,14 @@ import hans from "../assets/images/hans.png";
 
 function Features() {
   const [featOne, inViewfeatOne] = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
   });
-  const [featTwo, inViewfeatTwo] = useInView();
-  const [featThree, inViewfeatThree] = useInView();
-
-  const [barOne, setBarOne] = useState(false);
-
-  // if (inViewfeatOne) {
-  //   setBarOne(true);
-  // }
+  const [featTwo, inViewfeatTwo] = useInView({
+    threshold: 0.3,
+  });
+  const [featThree, inViewfeatThree] = useInView({
+    threshold: 0.3,
+  });
 
   return (
     <>
@@ -77,15 +75,15 @@ function Features() {
           </div>
         </div>
         {/* New Section */}
-        <div ref={featOne} className="features-two center">
+        <div className="features-two center">
           <div className="scroll-bar center">
-            <div className={`bar ${ "bar-focus"}`}></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
+            <div className={`bar ${inViewfeatOne && "bar-focus"}`}></div>
+            <div className={`bar ${inViewfeatTwo && "bar-focus"}`}></div>
+            <div className={`bar ${inViewfeatThree && "bar-focus"}`}></div>
           </div>
           <div className="big-wrap center">
             {/* first */}
-            <div className="features-two-wrap center">
+            <div ref={featOne} className="features-two-wrap center">
               <div className="left center">
                 <div className="cards-wrap center">
                   <div className="card center">
