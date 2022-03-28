@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { useInView } from "react-hook-inview";
 
 import screen2 from "../assets/images/screen2.png";
 import circle2 from "../assets/images/circle2.png";
@@ -23,6 +25,18 @@ import bulb from "../assets/images/bulb.png";
 import hans from "../assets/images/hans.png";
 
 function Features() {
+  const [featOne, inViewfeatOne] = useInView({
+    threshold: 0.5,
+  });
+  const [featTwo, inViewfeatTwo] = useInView();
+  const [featThree, inViewfeatThree] = useInView();
+
+  const [barOne, setBarOne] = useState(false);
+
+  // if (inViewfeatOne) {
+  //   setBarOne(true);
+  // }
+
   return (
     <>
       <div className="features section-padding">
@@ -63,9 +77,9 @@ function Features() {
           </div>
         </div>
         {/* New Section */}
-        <div className="features-two center">
+        <div ref={featOne} className="features-two center">
           <div className="scroll-bar center">
-            <div className="bar"></div>
+            <div className={`bar ${ "bar-focus"}`}></div>
             <div className="bar"></div>
             <div className="bar"></div>
           </div>
@@ -130,7 +144,7 @@ function Features() {
               </div>
             </div>
             {/* second */}
-            <div className="features-two-wrap center">
+            <div ref={featTwo} className="features-two-wrap center">
               <div className="left center">
                 <div className="cards-wrap center">
                   <div className="card center">
@@ -190,7 +204,7 @@ function Features() {
               </div>
             </div>
             {/* Third */}
-            <div className="features-two-wrap center">
+            <div ref={featThree} className="features-two-wrap center">
               <div className="left center">
                 <div className="cards-wrap center">
                   <div className="card center">

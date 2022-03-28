@@ -5,8 +5,8 @@ function Slider({ drawer, handleMenuClick }) {
   return (
     <div className={`slider ${drawer && "drawer"}`}>
       <div className="slider-wrap center">
-        <NavLink to={""}>Features</NavLink>
-        <NavLink to={""}>Pricing</NavLink>
+        <NavLink to={"/features"}>Features</NavLink>
+        <NavLink to={"/pricing"}>Pricing</NavLink>
         <NavLink to={""}>Contact</NavLink>
         <NavLink to={""}>About us</NavLink>
         <NavLink to={""}>Blog</NavLink>

@@ -117,6 +117,11 @@
     }
     .scroll-bar {
       flex-direction: column;
+      .bar-focus {
+        background: #c037db !important;
+        border-radius: 20px !important;
+     
+      }
 
       .bar {
         height: 8rem;
@@ -205,10 +210,9 @@
         right: 2.2rem;
         top: 0.5rem;
         z-index: 2;
-         @media (max-width: 960px) {
-        width: 73%;
-      
-      }
+        @media (max-width: 960px) {
+          width: 72%;
+        }
       }
       img {
         z-index: 3;
