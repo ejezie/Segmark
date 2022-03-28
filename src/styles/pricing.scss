@@ -81,6 +81,9 @@
       text-align: center;
       margin-right: 1.5rem;
       margin-bottom: 2rem;
+      @media (max-width: 500px) {
+        width: 90%;
+      }
       .up {
         flex-direction: column;
         background: #fcf1ff;
@@ -136,9 +139,9 @@
           font-size: 15.7px;
           text-align: center;
           color: #312f34;
-           @media (max-width: 960px) {
-              font-size: 15px;
-            }
+          @media (max-width: 960px) {
+            font-size: 15px;
+          }
         }
         .text-wrap {
           width: 100%;
