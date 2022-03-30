@@ -7,7 +7,7 @@ function Slider({ drawer, handleMenuClick }) {
       <div className="slider-wrap center">
         <NavLink to={"/features"}>Features</NavLink>
         <NavLink to={"/pricing"}>Pricing</NavLink>
-        <NavLink to={""}>Contact</NavLink>
+        <NavLink to={"/contact"}>Contact</NavLink>
         <NavLink to={""}>About us</NavLink>
         <NavLink to={""}>Blog</NavLink>
         <NavLink className="btn center" to={""}>

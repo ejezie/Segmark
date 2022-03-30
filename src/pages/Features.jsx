@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import { useInView } from "react-hook-inview";
 
+import infobg from "../assets/images/infobg.png";
+import kite from "../assets/images/kite.png";
 import screen2 from "../assets/images/screen2.png";
 import circle2 from "../assets/images/circle2.png";
 import play from "../assets/icons/play.png";
@@ -39,7 +41,7 @@ function Features() {
     console.log("scrolling");
   };
   return (
-    <>
+    <div className="section-wrapper">
       <div className="features section-padding">
         <div className="features-one center">
           <div className="left">
@@ -268,6 +270,8 @@ function Features() {
       </div>
       {/* Information Section */}
       <div className="information center" style={{ marginBottom: "5rem" }}>
+        <img className="kite" src={kite} alt="kite" />
+        <img className="infobg" src={infobg} alt="background" />
         <div className="left center">
           <div className="info-card center">
             <img className="info-icon marginb1" src={bulb} alt="icon" />
@@ -281,7 +285,7 @@ function Features() {
           <img className="hans" src={hans} alt="man" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -10,6 +10,7 @@ import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
 
 function App() {
   const [drawer, setDrawer] = useState(false);
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/features" element={<Features />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer/>
       </Router>

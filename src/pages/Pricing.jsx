@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import p1 from '../assets/images/p1.png';
-import p2 from '../assets/images/p2.png';
-import p3 from '../assets/images/p3.png';
-import p4 from '../assets/images/p4.png';
-import tick from '../assets/icons/tick.png';
+import p1 from "../assets/images/p1.png";
+import p2 from "../assets/images/p2.png";
+import p3 from "../assets/images/p3.png";
+import p4 from "../assets/images/p4.png";
+import tick from "../assets/icons/tick.png";
 import hans from "../assets/images/hans.png";
 import infobg from "../assets/images/infobg.png";
+import kite from "../assets/images/kite.png";
 import bulb from "../assets/images/bulb.png";
 
 function Pricing() {
@@ -207,7 +208,6 @@ function Pricing() {
                   Unlimited access to the learning centre
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -215,6 +215,8 @@ function Pricing() {
 
       <div className="bottom">
         <div className="information center">
+          <img className="kite" src={kite} alt="kite" />
+          <img className="infobg" src={infobg} alt="background" />
           <div className="left center">
             <div className="info-card center">
               <img className="info-icon marginb1" src={bulb} alt="icon" />
@@ -233,4 +235,4 @@ function Pricing() {
   );
 }
 
-export default Pricing
+export default Pricing;

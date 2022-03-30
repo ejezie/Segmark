@@ -14,6 +14,7 @@ import mask from "../assets/images/mask.png";
 import happy from "../assets/images/happy.png";
 import hans from "../assets/images/hans.png";
 import infobg from "../assets/images/infobg.png";
+import kite from "../assets/images/kite.png";
 import bulb from "../assets/images/bulb.png";
 import outline from "../assets/icons/outline.png";
 import people from "../assets/icons/people.png";
@@ -231,6 +232,8 @@ function Landing() {
           </div>
         </div>
         <div className="information center">
+          <img className="kite" src={kite} alt="kite" />
+          <img className="infobg" src={infobg} alt="background" />
           <div className="left center">
             <div className="info-card center">
               <img className="info-icon marginb1" src={bulb} alt="icon" />
