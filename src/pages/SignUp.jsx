@@ -15,7 +15,7 @@ import signupscreen from "../assets/images/signupscreen.png";
 function SignUp() {
   return (
     <div className="section-wrap">
-      <div className="auth center section-padding">
+      <div className="auth center ">
         <div className="left center">
           <div className="sub-heading">Signup as a School</div>
           <div className="text">

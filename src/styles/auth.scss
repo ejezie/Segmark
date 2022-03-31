@@ -1,8 +1,17 @@
+.section-padding {
+}
+
 .auth {
   width: 100vw;
   position: relative;
   justify-content: flex-start !important;
   background-color: #f8f8f8 !important;
+  padding: 5rem 2rem 5rem 5rem;
+  background-color: #fff;
+  @media (max-width: 960px) {
+    flex-direction: column-reverse !important;
+    padding: 0rem 0rem 5rem 0rem;
+  }
   .left {
     width: 45%;
     border-radius: 10px;
@@ -10,6 +19,9 @@
     padding: 3rem 0 2rem 0;
     z-index: 2;
     flex-direction: column;
+    @media (max-width: 960px) {
+      width: 100%;
+    }
     .sub-heading {
       font-weight: 600;
       font-size: 30px;
@@ -50,6 +62,11 @@
       #be40d8 99.68%
     );
     border-radius: 6px;
+    @media (max-width: 960px) {
+      width: 100%;
+      position: unset;
+      border-radius: 0px;
+    }
     .sub-heading {
       color: white;
     }
@@ -75,7 +92,12 @@
         backdrop-filter: blur(4px);
         border-radius: 4px;
         top: -6rem;
-        left: -7rem;
+        left: -5rem;
+        @media (max-width: 618px) {
+          width: 175px;
+          height: 126px;
+          left: -0.5rem;
+        }
         .top {
           justify-content: space-between;
           padding: 0.5rem 0.6rem;
@@ -111,9 +133,9 @@
           }
         }
       }
-      .signup-screen{
-          image-rendering: auto;
-          border-radius: 0 40% 50% 42%;
+      .signup-screen {
+        image-rendering: auto;
+        border-radius: 0 40% 50% 42%;
       }
       .card-two {
         flex-direction: column;
@@ -133,11 +155,16 @@
         box-shadow: 0px 0px 4px 10px rgba(0, 0, 0, 0.06);
         backdrop-filter: blur(4px);
         border-radius: 4px;
+        @media (max-width: 618px) {
+          width: 175px;
+          height: 126px;
+          right: -0.5rem;
+        }
       }
     }
-    .txt{
-        margin-top: 10rem;
-        margin-bottom: 2rem;
+    .txt {
+      margin-top: 10rem;
+      margin-bottom: 2rem;
     }
   }
 }

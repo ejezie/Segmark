@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import linepath from "../assets/images/linepath.png";
 import password from "../assets/images/password.png";
@@ -16,7 +16,7 @@ import signupscreen from "../assets/images/signupscreen.png";
 function SignIn() {
   return (
     <div className="section-wrap">
-      <div className="auth center section-padding">
+      <div className="auth center">
         <div className="left center">
           <div className="sub-heading">Login</div>
           <div className="text">
@@ -85,4 +85,4 @@ function SignIn() {
   );
 }
 
-export default SignIn
+export default SignIn;
