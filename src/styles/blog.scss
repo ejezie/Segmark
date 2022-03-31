@@ -30,10 +30,10 @@
         min-height: 300px;
         padding-top: 2rem;
         border-radius: 0 0 17px 17px;
-         @media (max-width: 400px) {
-            min-height: fit-content;
-            padding-bottom: 1rem;
-          }
+        @media (max-width: 400px) {
+          min-height: fit-content;
+          padding-bottom: 1rem;
+        }
         .btn {
           background: #ede4f6;
           border-radius: 20px;
@@ -61,7 +61,8 @@
             min-height: 130px;
           }
           @media (max-width: 400px) {
-            font-size: 18px;
+            font-size: 15px;
+            line-height: 30px;
             min-height: fit-content;
           }
         }
