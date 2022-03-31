@@ -1,6 +1,10 @@
 .blog {
+  margin-bottom: 10rem;
+  @media screen and (max-width: 960px) {
+    margin-bottom: 0;
+  }
   .sub-heading {
-      margin-bottom: 4rem;
+    margin-bottom: 4rem;
   }
   .blog-content-wrap {
     flex-wrap: wrap;
@@ -35,7 +39,7 @@
           margin-left: 1rem;
           white-space: nowrap;
           @media screen and (max-width: 400px) {
-          padding: 0.1rem 5rem;
+            padding: 0.1rem 5rem;
           }
         }
         .content-text {
