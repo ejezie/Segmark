@@ -15,7 +15,7 @@ import signupscreen from "../assets/images/signupscreen.png";
 function SignUp() {
   return (
     <div className="section-wrap">
-      <div className="auth center ">
+      <div className="auth center">
         <div className="left center">
           <div className="sub-heading">Signup as a School</div>
           <div className="text">
@@ -44,7 +44,9 @@ function SignUp() {
               <label htmlFor="passwordc">Confirm Password</label>
               <input type="password" id="passwordc" />
             </div>
-            <div className="btn center">Create Account</div>
+            <Link to={"/account"}>
+              <div className="btn center">Create Account</div>
+            </Link>
             <div className="text">
               Don’t have an account?{" "}
               <Link className="link" to={"/signin"}>
@@ -54,7 +56,7 @@ function SignUp() {
           </form>
         </div>
         <div className="right center">
-          <div className="sub-heading">Welcome Back</div>
+          <div className="sub-heading">Sign up</div>
           <div className="text">
             Find out how to improve your school's experience
           </div>

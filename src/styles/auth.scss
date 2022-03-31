@@ -1,4 +1,9 @@
-.section-padding {
+.signin {
+  padding: 18rem 2rem 18rem 5rem !important;
+  @media (max-width: 960px) {
+    padding: 0rem 0rem 5rem 0rem !important;
+
+  }
 }
 
 .auth {

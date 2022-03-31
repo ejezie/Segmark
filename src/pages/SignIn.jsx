@@ -16,7 +16,7 @@ import signupscreen from "../assets/images/signupscreen.png";
 function SignIn() {
   return (
     <div className="section-wrap">
-      <div className="auth center">
+      <div className="auth center signin">
         <div className="left center">
           <div className="sub-heading">Login</div>
           <div className="text">
