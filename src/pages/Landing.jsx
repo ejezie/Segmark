@@ -94,7 +94,7 @@ function Landing() {
           </div>
         </div>
       </div>
-
+      
       {/* New Section */}
 
       <div className="section center section-padding">

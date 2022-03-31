@@ -5,6 +5,7 @@
   height: fit-content;
   position: fixed;
   background-color: white;
+  z-index: 10;
   @media (max-width: 960px) {
       transform: translateX(1000px);
   }

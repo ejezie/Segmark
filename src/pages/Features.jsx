@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { useInView } from "react-hook-inview";
 
@@ -37,9 +37,6 @@ function Features() {
     threshold: 0.3,
   });
 
-  const onScrolls = () => {
-    console.log("scrolling");
-  };
   return (
     <div className="section-wrapper">
       <div className="features section-padding">

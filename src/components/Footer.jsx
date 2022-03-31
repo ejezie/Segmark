@@ -1,17 +1,25 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import facebook from "../assets/icons/facebook.png";
 import twitter from "../assets/icons/twitter.png";
 import instagram from "../assets/icons/instagram.png";
 import phone from "../assets/icons/phone.png";
 import message from "../assets/icons/message.png";
+import logo from "../assets/icons/logo.png";
+
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footer-wrap center">
         <div className="block1 center">
-          <div className="logo">Logo</div>
+          <div className="logo">
+            <Link to={"/"}>
+              <img src={logo} alt="logo" />
+            </Link>
+          </div>
           <div className="text" style={{ marginBottom: "1rem" }}>
             <span style={{ fontWeight: "600", color: "black" }}> Segmak</span>{" "}
             is a school management system that has unique features to enhance

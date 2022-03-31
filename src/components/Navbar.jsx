@@ -21,8 +21,8 @@ function Navbar({ handleMenuClick, }) {
         <NavLink to={"/features"}>Features</NavLink>
         <NavLink to={"/pricing"}>Pricing</NavLink>
         <NavLink to={"/contact"}>Contact</NavLink>
-        <NavLink to={""}>About us</NavLink>
-        <NavLink to={""}>Blog</NavLink>
+        <NavLink to={"/about"}>About us</NavLink>
+        <NavLink to={"/blog"}>Blog</NavLink>
         <NavLink className="btn center" to={""}>
           Sign Up
         </NavLink>

@@ -5,10 +5,15 @@
 @import "./styles/features.scss";
 @import "./styles/pricing.scss";
 @import "./styles/contact.scss";
+@import "./styles/about.scss";
+@import "./styles/question.scss";
 
 // General Classes
 body {
   font-family: "Poppins", sans-serif;
+}
+.nodisplay {
+  display: none;
 }
 
 .center {

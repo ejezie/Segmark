@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
 
 function App() {
   const [drawer, setDrawer] = useState(false);
@@ -29,8 +31,10 @@ function App() {
           <Route path="/features" element={<Features />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </>
   );
