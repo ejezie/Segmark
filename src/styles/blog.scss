@@ -47,8 +47,10 @@
           color: #312f34;
           margin-bottom: 1rem;
           margin-left: 1rem;
+          min-height: 160px;
           @media (max-width: 960px) {
             font-size: 18px;
+            min-height: 130px;
           }
         }
         .date-text {
