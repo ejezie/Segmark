@@ -1,5 +1,7 @@
 import React from "react";
 
+import Info from "../components/Info";
+
 import p1 from "../assets/images/p1.png";
 import p2 from "../assets/images/p2.png";
 import p3 from "../assets/images/p3.png";
@@ -214,22 +216,7 @@ function Pricing() {
       </div>
 
       <div className="bottom">
-        <div className="information center">
-          <img className="kite" src={kite} alt="kite" />
-          <img className="infobg" src={infobg} alt="background" />
-          <div className="left center">
-            <div className="info-card center">
-              <img className="info-icon marginb1" src={bulb} alt="icon" />
-              <div className="text marginb1">
-                Need more information about us? we will love to hear from you{" "}
-              </div>
-              <div className="btn center">Get in Touch</div>
-            </div>
-          </div>
-          <div className="right center">
-            <img className="hans" src={hans} alt="man" />
-          </div>
-        </div>
+        <Info />;
       </div>
     </div>
   );

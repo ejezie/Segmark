@@ -1,0 +1,63 @@
+.information {
+  width: 100vw;
+  background: #262626;
+  padding: 3rem 2rem 3rem 5rem;
+  z-index: 2;
+  margin-top: 3rem;
+  position: relative;
+  @media (max-width: 960px) {
+    flex-direction: column;
+    padding: 3rem 2rem 3rem 2rem;
+  }
+  .kite {
+    position: absolute;
+    top: 3.9rem;
+    right: 0rem;
+    image-rendering: auto;
+    @media (max-width: 815px) {
+      display: none;
+    }
+  }
+  .infobg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    image-rendering: auto;
+  }
+  .left {
+    width: 50%;
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+    .info-card {
+      background: #ffffff;
+      border-radius: 6px;
+      flex-direction: column;
+      width: 603px;
+      height: 316px;
+      .info-icon {
+      }
+      .text {
+        max-width: 400px;
+        text-align: center;
+        padding: 0 0.3rem;
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    position: relative;
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+    .hans {
+      width: 43rem;
+      object-fit: contain;
+      position: absolute;
+      bottom: -12.8rem;
+      @media (max-width: 960px) {
+        display: none;
+      }
+    }
+  }
+}

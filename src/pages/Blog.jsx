@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Info from "../components/Info";
+
 import blog1 from "../assets/images/blog1.png";
 import blog2 from "../assets/images/blog2.png";
 import blog3 from "../assets/images/blog3.png";
@@ -81,22 +83,7 @@ function Blog() {
           </div>
         </div>
       </div>
-      <div className="information center">
-        <img className="kite" src={kite} alt="kite" />
-        <img className="infobg" src={infobg} alt="background" />
-        <div className="left center">
-          <div className="info-card center">
-            <img className="info-icon marginb1" src={bulb} alt="icon" />
-            <div className="text marginb1">
-              Need more information about us? we will love to hear from you{" "}
-            </div>
-            <div className="btn center">Get in Touch</div>
-          </div>
-        </div>
-        <div className="right center">
-          <img className="hans" src={hans} alt="man" />
-        </div>
-      </div>
+      <Info />;
     </div>
   );
 }

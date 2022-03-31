@@ -23,7 +23,7 @@ function Navbar({ handleMenuClick, }) {
         <NavLink to={"/contact"}>Contact</NavLink>
         <NavLink to={"/about"}>About us</NavLink>
         <NavLink to={"/blog"}>Blog</NavLink>
-        <NavLink className="btn center" to={""}>
+        <NavLink className="btn center" to={"/signup"}>
           Sign Up
         </NavLink>
       </div>

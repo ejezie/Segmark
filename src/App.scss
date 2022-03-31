@@ -8,6 +8,8 @@
 @import "./styles/about.scss";
 @import "./styles/question.scss";
 @import "./styles/blog.scss";
+@import "./styles/auth.scss";
+@import "./styles/info.scss";
 
 // General Classes
 body {
@@ -116,70 +118,57 @@ a {
   }
 }
 
-.information {
-  width: 100vw;
-  background: #262626;
-  padding: 3rem 2rem 3rem 5rem;
-  z-index: 2;
-  margin-top: 3rem;
-  position: relative;
-  @media (max-width: 960px) {
-    flex-direction: column;
-    padding: 3rem 2rem 3rem 2rem;
-  }
-  .kite{
-    position: absolute;
-    top: 3.9rem;
-    right: 0rem;
-    image-rendering: auto;
-     @media (max-width: 815px) {
-        display: none;
-      }
-  }
-  .infobg{
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    image-rendering: auto;
-  }
-  .left {
-    width: 50%;
-    @media (max-width: 960px) {
-      width: 100%;
-    }
-    .info-card {
-      background: #ffffff;
-      border-radius: 6px;
-      flex-direction: column;
-      width: 603px;
-      height: 316px;
-      .info-icon {
-      }
-      .text {
-        max-width: 400px;
-        text-align: center;
-        padding: 0 0.3rem;
-      }
-    }
-  }
-  .right {
-    width: 50%;
-    position: relative;
-    @media (max-width: 960px) {
-      width: 100%;
-    }
-    .hans {
-      width: 43rem;
-      object-fit: contain;
-      position: absolute;
-      bottom: -12.8rem;
-      @media (max-width: 960px) {
-        display: none;
-      }
-    }
-  }
-}
 .section-wrapper {
   width: 100vw;
   overflow-x: hidden;
+}
+
+.input-wrap {
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  input,
+  textarea {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  input {
+    height: 64px;
+  }
+  textarea {
+    height: 154px;
+  }
+  .seepassword{
+    image-rendering: auto;
+    position: absolute;
+    top: 2.8rem;
+    right: 2.6rem;
+    cursor: pointer;
+  }
+}
+
+.playbtn-wrap {
+  justify-content: flex-start;
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
+  a {
+    margin-right: 1rem;
+    img {
+      image-rendering: auto;
+    }
+    @media (max-width: 960px) {
+      .play {
+        width: 7.5rem;
+      }
+      .apple {
+        width: 8.3rem;
+      }
+    }
+  }
 }

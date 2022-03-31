@@ -1,0 +1,143 @@
+.auth {
+  width: 100vw;
+  position: relative;
+  justify-content: flex-start !important;
+  background-color: #f8f8f8 !important;
+  .left {
+    width: 45%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 3rem 0 2rem 0;
+    z-index: 2;
+    flex-direction: column;
+    .sub-heading {
+      font-weight: 600;
+      font-size: 30px;
+    }
+    .text {
+      text-align: center;
+      font-size: 16px;
+    }
+    .form {
+      width: 86%;
+      flex-direction: column;
+      margin-top: 2.5rem;
+      .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      .text {
+        font-weight: 500;
+        color: black;
+        .link {
+          color: #983feb;
+        }
+      }
+    }
+  }
+  .right {
+    width: 53%;
+    flex-direction: column;
+    // align-items: flex-end;
+    z-index: 1;
+    position: absolute;
+    right: 3rem;
+    padding: 9rem 0 3rem 0;
+    background: linear-gradient(
+      91.15deg,
+      #803ff7 1.31%,
+      #983feb 54.04%,
+      #be40d8 99.68%
+    );
+    border-radius: 6px;
+    .sub-heading {
+      color: white;
+    }
+    .text {
+      color: white;
+      margin-bottom: 11rem;
+    }
+    .image-wrap {
+      position: relative;
+      .card-one {
+        position: absolute;
+        width: 235px;
+        height: 126px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.72) 0%,
+          rgba(255, 255, 255, 0.74) 100%
+        );
+        opacity: 0.6;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 4px 10px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(4px);
+        border-radius: 4px;
+        top: -6rem;
+        left: -7rem;
+        .top {
+          justify-content: space-between;
+          padding: 0.5rem 0.6rem;
+          .left-side {
+            .gradimage {
+              margin-right: 0.5rem;
+            }
+            .text-wrap {
+              .card-text {
+                font-size: 12px;
+              }
+              .card-num {
+                font-weight: 700;
+                font-size: 18px;
+                color: black;
+              }
+            }
+          }
+          .right-side {
+            .card-green-text {
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 18px;
+              color: #219653;
+            }
+          }
+        }
+        .bottom {
+          .lineimg {
+            width: 80%;
+            image-rendering: auto;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .signup-screen{
+          image-rendering: auto;
+          border-radius: 0 40% 50% 42%;
+      }
+      .card-two {
+        flex-direction: column;
+        position: absolute;
+        width: 235px;
+        height: 126px;
+        bottom: -3rem;
+        right: -7rem;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.72) 0%,
+          rgba(255, 255, 255, 0.74) 100%
+        );
+        opacity: 0.6;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 4px 10px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(4px);
+        border-radius: 4px;
+      }
+    }
+    .txt{
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+  }
+}

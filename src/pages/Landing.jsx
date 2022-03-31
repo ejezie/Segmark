@@ -2,6 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import Info from "../components/Info";
+
 import elipse1 from "../assets/images/Ellipse1.png";
 import elipse2 from "../assets/images/Ellipse2.png";
 // import screen from "../assets/images/landing.jpg";
@@ -20,7 +22,8 @@ import outline from "../assets/icons/outline.png";
 import people from "../assets/icons/people.png";
 import pipscreen from "../assets/icons/pipscreen.png";
 import school from "../assets/icons/school.png";
-import appstore from "../assets/icons/appstore.png";
+import playd from "../assets/images/playd.png";
+import appled from "../assets/images/appled.png";
 import card1 from "../assets/icons/card1.png";
 import card2 from "../assets/icons/card2.png";
 import card3 from "../assets/icons/card3.png";
@@ -47,10 +50,10 @@ function Landing() {
             next level.
           </div>
           <div className="btn-wrap center">
-            <Link to={""}>
+            <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
-            <Link to={""}>
+            <Link to={"/contact"}>
               <div className="btn btn-two center">Get in touch</div>
             </Link>
           </div>
@@ -80,9 +83,12 @@ function Landing() {
               <div className="icon-text">Students</div>
             </div>
           </div>
-          <div className="btn-wrap center">
+          <div className="playbtn-wrap center">
             <a href="#">
-              <img className="appstore" src={appstore} alt="icon" />
+              <img className="play" src={playd} alt="icon" />{" "}
+            </a>
+            <a href="#">
+              <img className="apple" src={appled} alt="icon" />
             </a>
           </div>
         </div>
@@ -94,7 +100,7 @@ function Landing() {
           </div>
         </div>
       </div>
-      
+
       {/* New Section */}
 
       <div className="section center section-padding">
@@ -109,7 +115,7 @@ function Landing() {
             students' performance in real time.
           </div>
           <div className="btn-wrap center">
-            <Link to={""}>
+            <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
           </div>
@@ -141,7 +147,7 @@ function Landing() {
             teachers and students to the next level.
           </div>
           <div className="btn-wrap center">
-            <Link to={""}>
+            <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
           </div>
@@ -167,7 +173,7 @@ function Landing() {
             workshops.
           </div>
           <div className="btn-wrap center">
-            <Link to={""}>
+            <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
           </div>
@@ -231,22 +237,7 @@ function Landing() {
             </div>
           </div>
         </div>
-        <div className="information center">
-          <img className="kite" src={kite} alt="kite" />
-          <img className="infobg" src={infobg} alt="background" />
-          <div className="left center">
-            <div className="info-card center">
-              <img className="info-icon marginb1" src={bulb} alt="icon" />
-              <div className="text marginb1">
-                Need more information about us? we will love to hear from you{" "}
-              </div>
-              <div className="btn center">Get in Touch</div>
-            </div>
-          </div>
-          <div className="right center">
-            <img className="hans" src={hans} alt="man" />
-          </div>
-        </div>
+        <Info />
       </div>
     </div>
   );

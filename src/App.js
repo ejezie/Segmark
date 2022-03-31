@@ -13,6 +13,9 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import AccountType from "./pages/AccountType";
 
 function App() {
   const [drawer, setDrawer] = useState(false);
@@ -33,6 +36,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/account" element={<AccountType />} />
         </Routes>
         <Footer />
       </Router>

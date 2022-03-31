@@ -1,5 +1,7 @@
 import React from "react";
 
+import Info from "../components/Info";
+
 import bulb from "../assets/images/bulb.png";
 import hans from "../assets/images/hans.png";
 import girl from "../assets/images/girl.png";
@@ -57,24 +59,7 @@ function Contact() {
         </div>
       </div>
       {/* Info Section */}
-      <div className="info-wrap">
-        <div className="information center" style={{ marginTop: "0" }}>
-          <img className="kite" src={kite} alt="kite" />
-          <img className="infobg" src={infobg} alt="background" />
-          <div className="left center">
-            <div className="info-card center">
-              <img className="info-icon marginb1" src={bulb} alt="icon" />
-              <div className="text marginb1">
-                Need more information about us? we will love to hear from you{" "}
-              </div>
-              <div className="btn center">Get in Touch</div>
-            </div>
-          </div>
-          <div className="right center">
-            <img className="hans" src={hans} alt="man" />
-          </div>
-        </div>
-      </div>
+      <Info />
     </div>
   );
 }
