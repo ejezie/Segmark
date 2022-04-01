@@ -27,12 +27,20 @@ import card3 from "../assets/icons/card3.png";
 import card4 from "../assets/icons/card4.png";
 
 function Landing() {
-  const [ref1, inView1] = useInView({
+  const [land1, inViewland1] = useInView({
     // threshold: 0.3,
   });
-  const [ref2, inView2] = useInView();
-  const [ref3, inView3] = useInView();
-  const [ref4, inView4] = useInView();
+  const [land2, inViewland2] = useInView();
+  const [land3, inViewland3] = useInView();
+  const [land4, inViewland4] = useInView();
+  const [land5, inViewland5] = useInView();
+  const [land6, inViewland6] = useInView();
+  const [land7, inViewland7] = useInView();
+  const [land8, inViewland8] = useInView();
+  const [land9, inViewland9] = useInView();
+  const [land10, inViewland10] = useInView();
+  const [land11, inViewland11] = useInView();
+  const [land12, inViewland12] = useInView();
 
   return (
     <div className="landing">
@@ -42,10 +50,10 @@ function Landing() {
         className="section center section-padding"
         style={{ marginBottom: "4rem" }}
       >
-        <div ref={ref1} className="left">
+        <div ref={land1} className="left">
           <div
             className={`marginb1 sub-heading  opaczro ${
-              inView1 && "opacone move-up"
+              inViewland1 && "opacone move-up"
             }`}
             style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
           >
@@ -53,8 +61,10 @@ function Landing() {
             <span className="purple">learning and development</span>
           </div>
           <div
-            className={`text marginb1 opaczro ${inView1 && "opacone move-up"}`}
-            style={{ animationDelay: "0.3s", transitionDelay: "0.3s" }}
+            className={`text marginb1 opaczro ${
+              inViewland1 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
           >
             We empower schools in improving key areas such as students learning
             and development when you enroll your school on Segmak; you’re
@@ -63,9 +73,9 @@ function Landing() {
           </div>
           <div
             className={`btn-wrap center marginb1  opaczro ${
-              inView1 && "opacone move-up"
+              inViewland1 && "opacone move-up"
             }`}
-            style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+            style={{ animationDelay: "0.6s", transitionDelay: "0.6s" }}
           >
             <Link to={"/signin"}>
               <div className="btn center">Get started</div>
@@ -76,9 +86,9 @@ function Landing() {
           </div>
           <div
             className={`icon-wrap center  opaczro ${
-              inView1 && "opacone move-up"
+              inViewland1 && "opacone move-up"
             }`}
-            style={{ animationDelay: "0.5s", transitionDelay: "0.5s" }}
+            style={{ animationDelay: "0.8s", transitionDelay: "0.8s" }}
           >
             <div className="wrap center">
               <div className="img-wrap center">
@@ -107,9 +117,9 @@ function Landing() {
           </div>
           <div
             className={`playbtn-wrap center opaczro ${
-              inView1 && "opacone move-up"
+              inViewland1 && "opacone move-up"
             }`}
-            style={{ animationDelay: "0.5s", transitionDelay: "0.5s" }}
+            style={{ animationDelay: "1s", transitionDelay: "1s" }}
           >
             <a href="#">
               <img className="play" src={playd} alt="icon" />{" "}
@@ -119,14 +129,14 @@ function Landing() {
             </a>
           </div>
         </div>
-        <div ref={ref2} className="right">
+        <div ref={land2} className="right">
           <div
-            className={`image-wrap opaczro ${inView2 && "opacone move-up"}`}
-            style={{ animationDelay: "0.5s", transitionDelay: "0.5s" }}
+            className={`image-wrap opaczro ${inViewland2 && "opacone move-up"}`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
           >
             <img className="screen" src={screen2} alt="screen" />
-            <img className="elipse1" src={elipse2} alt="screen" />
-            <img className="elipse2" src={elipse1} alt="screen" />
+            <img className="elipse1 float" src={elipse2} alt="screen" />
+            <img className="elipse2 float2" src={elipse1} alt="screen" />
           </div>
         </div>
       </div>
@@ -134,24 +144,44 @@ function Landing() {
       {/* New Section */}
 
       <div className="section center section-padding">
-        <div className="left">
-          <div className="sub-heading marginb1">
+        <div ref={land3} className="left">
+          <div
+            className={`marginb1 sub-heading  opaczro ${
+              inViewland3 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+          >
             <span className="purple">Just online,</span> the same classroom
           </div>
-          <div className="text marginb1">
+          <div
+            className={`marginb1 text  opaczro ${
+              inViewland3 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+          >
             Improve student participation and enjoy an online and offline
             classroom environment where you can easily share notes and conduct
             classes from anywhere. Segmak Classroom assists schools in measuring
             students' performance in real time.
           </div>
-          <div className="btn-wrap center">
+          <div
+            className={`btn-wrap center  opaczro ${
+              inViewland3 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.6s", transitionDelay: "0.6s" }}
+          >
             <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
           </div>
         </div>
-        <div className="right center">
-          <div className="right-img-wrap center">
+        <div ref={land4} className="right center">
+          <div
+            className={`right-img-wrap center  opaczro ${
+              inViewland4 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+          >
             <img className="img1" src={g31} alt="screen" />
             <img className="img2" src={imgboy} alt="screen" />
           </div>
@@ -163,12 +193,22 @@ function Landing() {
         className="section center reverse section-padding"
         style={{ backgroundColor: "#f8f8f8" }}
       >
-        <div className="left">
-          <div className="sub-heading marginb1">
+        <div ref={land5} className="left">
+          <div
+            className={`sub-heading marginb1 opaczro ${
+              inViewland5 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+          >
             <span className="purple">Unrestricted Access </span>to learning{" "}
             materials
           </div>
-          <div className="text marginb1">
+          <div
+            className={`text marginb1 opaczro ${
+              inViewland5 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+          >
             Our learning center provides students with unrestricted access to a
             variety of learning resources. Students participate in self-directed
             and independent learning activities with profile analytics and
@@ -176,13 +216,21 @@ function Landing() {
             dashboard and track their progress.cademic engagement for your
             teachers and students to the next level.
           </div>
-          <div className="btn-wrap center">
+          <div
+            className={`btn-wrap center opaczro ${
+              inViewland5 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.6s", transitionDelay: "0.6s" }}
+          >
             <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
           </div>
         </div>
-        <div className="right center">
+        <div ref={land6}
+          className={`right center opaczro ${inViewland6 && "opacone move-up"}`}
+          style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+        >
           <div className="right-img-wrap center">
             <img className="img1" src={g30} alt="screen" />
             <img className="img3" src={mask} alt="screen" />
