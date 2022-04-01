@@ -290,3 +290,19 @@ a {
     transform: translateY(0px);
   }
 }
+
+.scale-up {
+  animation: scale-up 1s linear infinite;
+  image-rendering: auto;
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

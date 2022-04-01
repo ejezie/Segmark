@@ -227,11 +227,13 @@ function Landing() {
             </Link>
           </div>
         </div>
-        <div ref={land6}
-          className={`right center opaczro ${inViewland6 && "opacone move-up"}`}
-          style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
-        >
-          <div className="right-img-wrap center">
+        <div ref={land6} className="right center">
+          <div
+            className={`right-img-wrap center opaczro ${
+              inViewland6 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+          >
             <img className="img1" src={g30} alt="screen" />
             <img className="img3" src={mask} alt="screen" />
           </div>
@@ -240,23 +242,42 @@ function Landing() {
       {/* New Section */}
 
       <div className="section center section-padding">
-        <div className="left">
-          <div className="sub-heading marginb1">
+        <div className="left" ref={land7}>
+          <div
+            className={`sub-heading marginb1 opaczro ${
+              inViewland7 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+          >
             <span className="purple"> Segmak</span> for teachers
           </div>
-          <div className="text marginb1">
+          <div
+            className={`text marginb1 opaczro ${
+              inViewland7 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+          >
             Segmak gives teachers access to tools that help them better engage
             their children and create growth plans that parents can see.
             Teachers can use the site to get free trainings, seminars, and
             workshops.
           </div>
-          <div className="btn-wrap center">
+          <div
+            className={`btn-wrap center opaczro ${
+              inViewland7 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.6s", transitionDelay: "0.6s" }}
+          >
             <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
           </div>
         </div>
-        <div className="right center">
+        <div
+          ref={land8}
+          className={`right center opaczro ${inViewland7 && "opacone move-up"}`}
+          style={{ animationDelay: "0.6s", transitionDelay: "0.6s" }}
+        >
           <div className="right-img-wrap center">
             <img className="img1" src={g29} alt="screen" />
             <img className="img4" src={happy} alt="screen" />
@@ -267,7 +288,13 @@ function Landing() {
       {/* New Section */}
       <div className="landing-two center">
         <div className="card-wrap center">
-          <div className="card center">
+          <div
+            ref={land9}
+            className={`card center opaczro ${
+              inViewland9 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.5s", transitionDelay: "0.5s" }}
+          >
             <div className="wrap center">
               <div className="icon center">
                 <img src={card1} alt="icon" />
@@ -279,7 +306,13 @@ function Landing() {
               </div>
             </div>
           </div>
-          <div className="card center">
+          <div
+            ref={land10}
+            className={`card center opaczro ${
+              inViewland10 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.7s", transitionDelay: "0.7s" }}
+          >
             <div className="wrap center">
               <div className="icon center">
                 <img src={card2} alt="icon" />
@@ -290,7 +323,13 @@ function Landing() {
               </div>
             </div>
           </div>
-          <div className="card center">
+          <div
+            ref={land11}
+            className={`card center opaczro ${
+              inViewland11 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.9s", transitionDelay: "0.9s" }}
+          >
             <div className="wrap center">
               <div className="icon center">
                 <img src={card3} alt="icon" />
@@ -302,7 +341,13 @@ function Landing() {
               </div>
             </div>
           </div>
-          <div className="card center">
+          <div
+            ref={land12}
+            className={`card center opaczro ${
+              inViewland12 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "1.1s", transitionDelay: "1.1s" }}
+          >
             <div className="wrap center">
               <div className="icon center">
                 <img src={card4} alt="icon" />

@@ -10,11 +10,11 @@ import bulb from "../assets/images/bulb.png";
 function Info() {
   return (
     <div className="information center">
-      <img className="kite" src={kite} alt="kite" />
+      <img className="kite float2" src={kite} alt="kite" />
       <img className="infobg" src={infobg} alt="background" />
       <div className="left center">
         <div className="info-card center">
-          <img className="info-icon marginb1" src={bulb} alt="icon" />
+          <img className="info-icon marginb1 scale-up" src={bulb} alt="icon" />
           <div className="text marginb1">
             Need more information about us? we will love to hear from you{" "}
           </div>
