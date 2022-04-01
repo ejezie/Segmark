@@ -144,7 +144,7 @@ a {
   textarea {
     height: 154px;
   }
-  .seepassword{
+  .seepassword {
     image-rendering: auto;
     position: absolute;
     top: 2.8rem;
@@ -171,5 +171,73 @@ a {
         width: 8.3rem;
       }
     }
+  }
+}
+
+// Animations
+.opaczro {
+  opacity: 0;
+}
+
+.opacone {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.move-up {
+  animation: move-up 0.5s ease-in-out;
+  // opacity: 1;
+}
+@keyframes move-up {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.move-down {
+  animation: move-down 0.5s ease-in-out;
+  opacity: 1;
+}
+@keyframes move-down {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.move-left {
+  animation: move-left 0.5s ease-in-out;
+  opacity: 1;
+}
+@keyframes move-left {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.move-right {
+  animation: move-right 0.5s ease-in-out;
+  opacity: 1;
+}
+@keyframes move-right {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }

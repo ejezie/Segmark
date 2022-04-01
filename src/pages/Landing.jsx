@@ -2,11 +2,12 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import { useInView } from "react-hook-inview";
+
 import Info from "../components/Info";
 
 import elipse1 from "../assets/images/Ellipse1.png";
 import elipse2 from "../assets/images/Ellipse2.png";
-// import screen from "../assets/images/landing.jpg";
 import screen2 from "../assets/images/screen2.png";
 import g29 from "../assets/images/g29.png";
 import g31 from "../assets/images/g31.png";
@@ -14,10 +15,6 @@ import imgboy from "../assets/images/imgboy.png";
 import g30 from "../assets/images/g30.png";
 import mask from "../assets/images/mask.png";
 import happy from "../assets/images/happy.png";
-import hans from "../assets/images/hans.png";
-import infobg from "../assets/images/infobg.png";
-import kite from "../assets/images/kite.png";
-import bulb from "../assets/images/bulb.png";
 import outline from "../assets/icons/outline.png";
 import people from "../assets/icons/people.png";
 import pipscreen from "../assets/icons/pipscreen.png";
@@ -30,6 +27,13 @@ import card3 from "../assets/icons/card3.png";
 import card4 from "../assets/icons/card4.png";
 
 function Landing() {
+  const [ref1, inView1] = useInView({
+    // threshold: 0.3,
+  });
+  const [ref2, inView2] = useInView();
+  const [ref3, inView3] = useInView();
+  const [ref4, inView4] = useInView();
+
   return (
     <div className="landing">
       {/* New Section */}
@@ -38,18 +42,31 @@ function Landing() {
         className="section center section-padding"
         style={{ marginBottom: "4rem" }}
       >
-        <div className="left">
-          <div className="sub-heading marginb1">
+        <div ref={ref1} className="left">
+          <div
+            className={`marginb1 sub-heading  opaczro ${
+              inView1 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+          >
             Seamless school management system to enhance <br />{" "}
             <span className="purple">learning and development</span>
           </div>
-          <div className="text marginb1">
+          <div
+            className={`text marginb1 opaczro ${inView1 && "opacone move-up"}`}
+            style={{ animationDelay: "0.3s", transitionDelay: "0.3s" }}
+          >
             We empower schools in improving key areas such as students learning
             and development when you enroll your school on Segmak; you’re
             pushing academic engagement for your teachers and students to the
             next level.
           </div>
-          <div className="btn-wrap center">
+          <div
+            className={`btn-wrap center marginb1  opaczro ${
+              inView1 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+          >
             <Link to={"/signin"}>
               <div className="btn center">Get started</div>
             </Link>
@@ -57,7 +74,12 @@ function Landing() {
               <div className="btn btn-two center">Get in touch</div>
             </Link>
           </div>
-          <div className="icon-wrap center">
+          <div
+            className={`icon-wrap center  opaczro ${
+              inView1 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.5s", transitionDelay: "0.5s" }}
+          >
             <div className="wrap center">
               <div className="img-wrap center">
                 <img src={school} alt="icon" />
@@ -83,7 +105,12 @@ function Landing() {
               <div className="icon-text">Students</div>
             </div>
           </div>
-          <div className="playbtn-wrap center">
+          <div
+            className={`playbtn-wrap center opaczro ${
+              inView1 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.5s", transitionDelay: "0.5s" }}
+          >
             <a href="#">
               <img className="play" src={playd} alt="icon" />{" "}
             </a>
@@ -92,8 +119,11 @@ function Landing() {
             </a>
           </div>
         </div>
-        <div className="right">
-          <div className="image-wrap">
+        <div ref={ref2} className="right">
+          <div
+            className={`image-wrap opaczro ${inView2 && "opacone move-up"}`}
+            style={{ animationDelay: "0.5s", transitionDelay: "0.5s" }}
+          >
             <img className="screen" src={screen2} alt="screen" />
             <img className="elipse1" src={elipse2} alt="screen" />
             <img className="elipse2" src={elipse1} alt="screen" />
