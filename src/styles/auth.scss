@@ -5,6 +5,19 @@
   }
 }
 
+ .logo-icon {
+    margin-left: 5rem;
+    img {
+      image-rendering: auto;
+      @media (max-width: 1025px) {
+        width: 6rem;
+      }
+    }
+    @media (max-width: 960px) {
+      margin-left: 1rem;
+    }
+  }
+
 .auth {
   width: 100vw;
   position: relative;
@@ -12,6 +25,7 @@
   background-color: #f8f8f8 !important;
   padding: 5rem 2rem 5rem 5rem;
   background-color: #fff;
+ 
   .p1,
   .p4,
   .p5 {

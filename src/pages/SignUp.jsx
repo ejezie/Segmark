@@ -8,6 +8,7 @@ import appled from "../assets/images/appled.png";
 import p1 from "../assets/images/p1.png";
 import p4 from "../assets/images/p4.png";
 import p5 from "../assets/images/p5.png";
+import logo from "../assets/icons/logo.png";
 import barchart from "../assets/images/barchart.png";
 import grad from "../assets/icons/grad.png";
 import signupscreen from "../assets/images/signupscreen.png";
@@ -15,6 +16,9 @@ import signupscreen from "../assets/images/signupscreen.png";
 function SignUp() {
   return (
     <div className="section-wrap">
+      <div className="logo-icon" style={{ padding: "1rem 0" }}>
+        <img src={logo} alt="logo" />
+      </div>
       <div className="auth center">
         <img className="p1" src={p1} alt="clip" />
         <img className="p4" src={p4} alt="clip" />
