@@ -2,7 +2,6 @@
   padding: 18rem 2rem 18rem 5rem !important;
   @media (max-width: 960px) {
     padding: 0rem 0rem 5rem 0rem !important;
-
   }
 }
 
@@ -13,6 +12,32 @@
   background-color: #f8f8f8 !important;
   padding: 5rem 2rem 5rem 5rem;
   background-color: #fff;
+  .p1,
+  .p4,
+  .p5 {
+    position: absolute;
+    width: 3rem;
+    image-rendering: auto;
+    z-index: 10;
+    @media (max-width: 960px) {
+      width: 2rem;
+    }
+  }
+  .p1 {
+    top: 7%;
+    left: 7%;
+  }
+  .p4 {
+    top: 3%;
+    right: 7%;
+  }
+  .p5 {
+    top: 85%;
+    right: 7%;
+     @media (max-width: 960px) {
+      top: 95%;
+    }
+  }
   @media (max-width: 960px) {
     flex-direction: column-reverse !important;
     padding: 0rem 0rem 5rem 0rem;
@@ -101,7 +126,7 @@
         @media (max-width: 618px) {
           width: 175px;
           height: 126px;
-          left: -0.5rem;
+          left: -0.1rem;
         }
         .top {
           justify-content: space-between;
@@ -109,6 +134,7 @@
           .left-side {
             .gradimage {
               margin-right: 0.5rem;
+              image-rendering: auto;
             }
             .text-wrap {
               .card-text {
@@ -163,7 +189,7 @@
         @media (max-width: 618px) {
           width: 175px;
           height: 126px;
-          right: -0.5rem;
+          right: -0.1rem;
         }
       }
     }

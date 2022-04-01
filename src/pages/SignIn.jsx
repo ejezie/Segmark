@@ -17,6 +17,9 @@ function SignIn() {
   return (
     <div className="section-wrap">
       <div className="auth center signin">
+        <img className="p1" src={p1} alt="clip" />
+        <img className="p4" src={p4} alt="clip" />
+        <img className="p5" src={p5} alt="clip" />
         <div className="left center">
           <div className="sub-heading">Login</div>
           <div className="text">

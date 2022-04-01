@@ -6,15 +6,16 @@ import p1 from "../assets/images/p1.png";
 import p2 from "../assets/images/p2.png";
 import p3 from "../assets/images/p3.png";
 import p4 from "../assets/images/p4.png";
+import p7 from "../assets/images/p7.png";
+import p6 from "../assets/images/p6.png";
 import tick from "../assets/icons/tick.png";
-import hans from "../assets/images/hans.png";
-import infobg from "../assets/images/infobg.png";
-import kite from "../assets/images/kite.png";
-import bulb from "../assets/images/bulb.png";
+
 
 function Pricing() {
   return (
     <div className="pricing ">
+      <img className="p7" src={p7} alt="color" />
+      <img className="p6" src={p6} alt="color" />
       <div className="top center">
         <div className="sub-heading">
           {" "}
@@ -27,7 +28,7 @@ function Pricing() {
         <div className="text">Choose a Smart Plan for Your School</div>
         <div className="middle section-padding center">
           {/* First Card */}
-          <div className="price-card center">
+          <div className="price-card price-card-height center">
             <div className="up center">
               <div className="price-header">Basic Plan</div>
               <div className="text">
@@ -154,7 +155,7 @@ function Pricing() {
             </div>
           </div>
           {/* Third Card */}
-          <div className="price-card center">
+          <div className="price-card price-card-height center">
             <div className="up center">
               <div className="price-header">Premuim Plan</div>
               <div className="text">
@@ -216,7 +217,7 @@ function Pricing() {
       </div>
 
       <div className="bottom">
-        <Info />;
+        <Info />
       </div>
     </div>
   );

@@ -16,6 +16,9 @@ function SignUp() {
   return (
     <div className="section-wrap">
       <div className="auth center">
+        <img className="p1" src={p1} alt="clip" />
+        <img className="p4" src={p4} alt="clip" />
+        <img className="p5" src={p5} alt="clip" />
         <div className="left center">
           <div className="sub-heading">Signup as a School</div>
           <div className="text">

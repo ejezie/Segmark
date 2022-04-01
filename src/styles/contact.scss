@@ -3,6 +3,28 @@
   padding: 4rem 5rem 8rem 5rem;
   flex-direction: column;
   background: #f3f3f3;
+  .p1,
+  .p4,
+  .p5 {
+    position: absolute;
+    width: 3rem;
+    image-rendering: auto;
+    @media (max-width: 960px) {
+      width: 2rem;
+    }
+  }
+  .p1{
+    top: 29%;
+    left: 7%;
+  }
+  .p4{
+    top: 26%;
+    right: 7%;
+  }
+  .p5{
+    top: 129%;
+    right: 7%;
+  }
   @media (max-width: 960px) {
     padding: 4rem 0rem 8rem 0rem;
   }
@@ -110,7 +132,6 @@
             width: 100%;
           }
         }
-       
         .btn-wrap {
           @media (max-width: 960px) {
             width: 100%;

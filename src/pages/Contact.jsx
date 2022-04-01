@@ -2,18 +2,21 @@ import React from "react";
 
 import Info from "../components/Info";
 
-import bulb from "../assets/images/bulb.png";
-import hans from "../assets/images/hans.png";
 import girl from "../assets/images/girl.png";
 import phone from "../assets/icons/phone.png";
 import message from "../assets/icons/message.png";
-import infobg from "../assets/images/infobg.png";
-import kite from "../assets/images/kite.png";
+import p1 from "../assets/images/p1.png";
+import p4 from "../assets/images/p4.png";
+import p5 from "../assets/images/p5.png";
+
 
 function Contact() {
   return (
     <div className="section-wrapper">
       <div className="contact center">
+        <img className="p1" src={p1} alt="clip" />
+        <img className="p4" src={p4} alt="clip" />
+        <img className="p5" src={p5} alt="clip" />
         <div className="sub-heading">Contact</div>
         <div className="contact-wrap center">
           <div className="left center">
