@@ -34,7 +34,7 @@
   .p5 {
     top: 85%;
     right: 7%;
-     @media (max-width: 960px) {
+    @media (max-width: 960px) {
       top: 95%;
     }
   }
@@ -166,7 +166,11 @@
       }
       .signup-screen {
         image-rendering: auto;
-        border-radius: 0 40% 50% 42%;
+        border-radius: 0 40% 40% 42%;
+        @media (max-width: 618px) {
+          width: 90%;
+          border-radius: 0 40% 40% 42%;
+        }
       }
       .card-two {
         flex-direction: column;
