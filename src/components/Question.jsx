@@ -15,7 +15,7 @@ function Question({ textQ, answer }) {
     <div
       ref={qObserve}
       className={`question opaczro ${!open && "q-height"} ${inViewQ && "opacone move-up"}`}
-      style={{ animationDelay: "0.8s", transitionDelay: "0.8s" }}
+      style={{ animationDelay: "0s", transitionDelay: "0.8s" }}
     >
       <div className="question-text-wrap center">
         <div className="question-text">{textQ}</div>
