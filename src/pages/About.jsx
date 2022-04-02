@@ -64,7 +64,7 @@ function About() {
           );
         })}
       </div>
-      <Info />;
+      <Info />
     </div>
   );
 }

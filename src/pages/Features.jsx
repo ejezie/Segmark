@@ -268,7 +268,7 @@ function Features() {
         </div>
       </div>
       {/* Information Section */}
-      <Info />;
+      <Info />
     </div>
   );
 }

@@ -83,7 +83,7 @@ function Blog() {
           </div>
         </div>
       </div>
-      <Info />;
+      <Info />
     </div>
   );
 }
