@@ -275,7 +275,7 @@ function Landing() {
         </div>
         <div
           ref={land8}
-          className={`right center opaczro ${inViewland7 && "opacone move-up"}`}
+          className={`right center opaczro ${inViewland8 && "opacone move-up"}`}
           style={{ animationDelay: "0.6s", transitionDelay: "0.6s" }}
         >
           <div className="right-img-wrap center">
