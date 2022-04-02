@@ -18,7 +18,9 @@ function SignIn() {
   return (
     <div className="section-wrap">
       <div className="logo-icon" style={{ padding: "1rem 0" }}>
-        <img src={logo} alt="logo" />
+        <Link to={"/"}>
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="auth center signin">
         <img className="p1" src={p1} alt="clip" />
