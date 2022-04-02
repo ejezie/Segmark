@@ -6,10 +6,7 @@ import Info from "../components/Info";
 import blog1 from "../assets/images/blog1.png";
 import blog2 from "../assets/images/blog2.png";
 import blog3 from "../assets/images/blog3.png";
-import hans from "../assets/images/hans.png";
-import infobg from "../assets/images/infobg.png";
-import kite from "../assets/images/kite.png";
-import bulb from "../assets/images/bulb.png";
+
 
 function Blog() {
   return (

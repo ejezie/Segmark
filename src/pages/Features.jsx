@@ -4,8 +4,7 @@ import { useInView } from "react-hook-inview";
 
 import Info from "../components/Info";
 
-import infobg from "../assets/images/infobg.png";
-import kite from "../assets/images/kite.png";
+
 import screen2 from "../assets/images/screen2.png";
 import circle2 from "../assets/images/circle2.png";
 import play from "../assets/icons/play.png";
@@ -25,8 +24,7 @@ import feat3 from "../assets/images/feat3.png";
 import outline from "../assets/icons/outline.png";
 import pipscreen from "../assets/icons/pipscreen.png";
 import cash from "../assets/icons/cash.png";
-import bulb from "../assets/images/bulb.png";
-import hans from "../assets/images/hans.png";
+
 
 function Features() {
   const [featOne, inViewfeatOne] = useInView({

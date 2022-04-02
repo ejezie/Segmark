@@ -214,16 +214,15 @@ a {
 
 .move-left {
   animation: move-left 0.5s ease-in-out;
-  opacity: 1;
 }
 @keyframes move-left {
   0% {
     transform: translateX(20px);
-    opacity: 0;
+    // opacity: 0;
   }
   100% {
     transform: translateX(0px);
-    opacity: 1;
+    // opacity: 1;
   }
 }
 
@@ -266,9 +265,7 @@ a {
   }
 }
 .float2 {
-  animation: float2 7s infinite;
-  animation-timing-function: linear;
-  opacity: 1;
+  animation: float2 7s linear infinite;
 }
 @keyframes float2 {
   0% {

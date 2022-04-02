@@ -2,6 +2,8 @@ import React from "react";
 
 import Info from "../components/Info";
 
+import { useInView } from "react-hook-inview";
+
 import p1 from "../assets/images/p1.png";
 import p2 from "../assets/images/p2.png";
 import p3 from "../assets/images/p3.png";
@@ -10,25 +12,75 @@ import p7 from "../assets/images/p7.png";
 import p6 from "../assets/images/p6.png";
 import tick from "../assets/icons/tick.png";
 
-
 function Pricing() {
+  const [price, inViewprice] = useInView();
+  const [price1, inViewprice1] = useInView();
+  const [price2, inViewprice2] = useInView();
+  const [price3, inViewprice3] = useInView();
+  const [price4, inViewprice4] = useInView();
+
   return (
     <div className="pricing ">
-      <img className="p7" src={p7} alt="color" />
-      <img className="p6" src={p6} alt="color" />
+      <img className="p7 float" src={p7} alt="color" />
+      <img className="p6 float2" src={p6} alt="color" />
       <div className="top center">
-        <div className="sub-heading">
+        <div
+          ref={price}
+          className={`sub-heading opaczro ${inViewprice && "opacone move-up"}`}
+          style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+        >
           {" "}
           <span className="purple">Segmak</span> Pricing Plans
         </div>
-        <img className="p1" src={p1} alt="color" />
-        <img className="p2" src={p2} alt="color" />
-        <img className="p3" src={p3} alt="color" />
-        <img className="p4" src={p4} alt="color" />
-        <div className="text">Choose a Smart Plan for Your School</div>
+        <div ref={price1}>
+          <img
+            src={p1}
+            alt="color"
+            className={`p1 opaczro float ${
+              inViewprice1 && "opacone move-right"
+            }`}
+            style={{ animationDelay: "1s", transitionDelay: "1s" }}
+          />
+          <img
+            className={`p2 opaczro float ${
+              inViewprice1 && "opacone move-right"
+            }`}
+            style={{ animationDelay: "1.5s", transitionDelay: "1.5s" }}
+            src={p2}
+            alt="color"
+          />
+          <img
+            className={`p3 opaczro float2 ${
+              inViewprice1 && "opacone move-left"
+            }`}
+            style={{ animationDelay: "1.7s", transitionDelay: "1.7s" }}
+            src={p3}
+            alt="color"
+          />
+          <img
+            className={`p4 opaczro float2 ${
+              inViewprice1 && "opacone move-right"
+            }`}
+            style={{ animationDelay: "2s", transitionDelay: "2s" }}
+            src={p4}
+            alt="color"
+          />
+        </div>
+        <div
+          className={` text opaczro ${inViewprice1 && "opacone move-up"}`}
+          style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+        >
+          Choose a Smart Plan for Your School
+        </div>
         <div className="middle section-padding center">
           {/* First Card */}
-          <div className="price-card price-card-height center">
+          <div
+            ref={price2}
+            className={`price-card price-card-height center opaczro ${
+              inViewprice2 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+          >
             <div className="up center">
               <div className="price-header">Basic Plan</div>
               <div className="text">
@@ -91,7 +143,13 @@ function Pricing() {
             </div>
           </div>
           {/* Second Card */}
-          <div className="price-card center">
+          <div
+            ref={price3}
+            className={`price-card center opaczro ${
+              inViewprice3 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.6s", transitionDelay: "0.6s" }}
+          >
             <div className="up center">
               <div className="price-header">Standard Plan</div>
               <div className="text">
@@ -155,7 +213,13 @@ function Pricing() {
             </div>
           </div>
           {/* Third Card */}
-          <div className="price-card price-card-height center">
+          <div
+            ref={price4}
+            className={`price-card price-card-height center opaczro ${
+              inViewprice4 && "opacone move-up"
+            }`}
+            style={{ animationDelay: ".8s", transitionDelay: ".8s" }}
+          >
             <div className="up center">
               <div className="price-header">Premuim Plan</div>
               <div className="text">
