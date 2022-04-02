@@ -30,13 +30,13 @@ function Features() {
 
   // Scroll bar Animation for Features two section
   const [featOne, inViewfeatOne] = useInView({
-    threshold: 0.3,
+    // threshold: 0.3,
   });
   const [featTwo, inViewfeatTwo] = useInView({
-    threshold: 0.3,
+    // threshold: 0.3,
   });
   const [featThree, inViewfeatThree] = useInView({
-    threshold: 0.3,
+    // threshold: 0.3,
   });
 
   // Feature element animation
