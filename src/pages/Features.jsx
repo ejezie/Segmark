@@ -27,6 +27,8 @@ import cash from "../assets/icons/cash.png";
 
 
 function Features() {
+
+  // Scroll bar Animation for Features two section
   const [featOne, inViewfeatOne] = useInView({
     threshold: 0.3,
   });
@@ -37,17 +39,33 @@ function Features() {
     threshold: 0.3,
   });
 
+  // Feature element animation
+
+  const [feature, inViewfeature] = useInView();
+  const [feature1, inViewfeature1] = useInView();
+
+
   return (
     <div className="section-wrapper">
       <div className="features section-padding">
         <div className="features-one center">
-          <div className="left">
-            <div className="sub-heading marginb1">
+          <div ref={feature} className="left">
+            <div
+              className={` sub-heading marginb1 opaczro ${
+                inViewfeature && "opacone move-up"
+              }`}
+              style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+            >
               Explore the exciting features on Segmak for better academic
               activities
               <span className="purple"> academic activities</span>
             </div>
-            <div className="text marginb1">
+            <div
+              className={` text marginb1 opaczro ${
+                inViewfeature && "opacone move-up"
+              }`}
+              style={{ animationDelay: "0.4s", transitionDelay: "0.4s" }}
+            >
               Segmak is the best school ecosystem that combines teacher,
               student, parent and other school staffs in a single automation
               software. it includes a modern design that saves time and provides
@@ -55,10 +73,16 @@ function Features() {
               data, class & school-wide view, and much more.
             </div>
           </div>
-          <div className="right center">
+          <div
+            ref={feature1}
+            className={` right center opaczro ${
+              inViewfeature1 && "opacone move-up"
+            }`}
+            style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+          >
             <div className="right-img-wrap center">
               <img className="screen2" src={screen2} alt="screen" />
-              <img className="circle2" src={circle2} alt="screen" />
+              <img className="circle2 float" src={circle2} alt="screen" />
               <div className="box1 center">
                 <img src={time} alt="icon" />
                 <div className="text-wrap">
@@ -85,7 +109,13 @@ function Features() {
           </div>
           <div className="big-wrap center">
             {/* first */}
-            <div ref={featOne} className="features-two-wrap center">
+            <div
+              ref={featOne}
+              className={` features-two-wrap center opaczro ${
+                inViewfeatOne && "opacone move-up"
+              }`}
+              style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+            >
               <div className="left center">
                 <div className="cards-wrap center">
                   <div className="card center">
@@ -144,7 +174,13 @@ function Features() {
               </div>
             </div>
             {/* second */}
-            <div ref={featTwo} className="features-two-wrap center">
+            <div
+              ref={featTwo}
+              className={` features-two-wrap center opaczro ${
+                inViewfeatTwo && "opacone move-up"
+              }`}
+              style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+            >
               <div className="left center">
                 <div className="cards-wrap center">
                   <div className="card center">
@@ -204,7 +240,13 @@ function Features() {
               </div>
             </div>
             {/* Third */}
-            <div ref={featThree} className="features-two-wrap center">
+            <div
+              ref={featThree}
+              className={` features-two-wrap center opaczro ${
+                inViewfeatThree && "opacone move-up"
+              }`}
+              style={{ animationDelay: "0.2s", transitionDelay: "0.2s" }}
+            >
               <div className="left center">
                 <div className="cards-wrap center">
                   <div className="card center">

@@ -242,7 +242,7 @@ a {
 }
 
 .float {
-  animation: float 7s infinite linear;
+  animation: float 7s 0s infinite linear;
 }
 @keyframes float {
   0% {
@@ -265,7 +265,7 @@ a {
   }
 }
 .float2 {
-  animation: float2 7s linear infinite;
+  animation: float2 7s 0s linear infinite;
 }
 @keyframes float2 {
   0% {
@@ -287,6 +287,30 @@ a {
     transform: translateY(0px);
   }
 }
+// .float3 {
+//   animation: float2 30s 0s linear infinite;
+//   animation-play-state: running;
+// }
+// @keyframes float3 {
+//   0% {
+//     transform: translateY(0px);
+//   }
+//   10% {
+//     transform: translateY(-1px);
+//   }
+//   30% {
+//     transform: translateX(-1px);
+//   }
+//   60% {
+//     transform: translateX(1px);
+//   }
+//   80% {
+//     transform: translateX(0px);
+//   }
+//   100% {
+//     transform: translateY(0px);
+//   }
+// }
 
 .scale-up {
   animation: scale-up 1s linear infinite;
